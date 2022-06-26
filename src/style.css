@@ -1,5 +1,6 @@
 body {
-    font-family: arial, sans-serif;
+    font-family: "Dancing Script", cursive;
+   
 }
 
 h1 {
@@ -31,8 +32,9 @@ li:first-letter {
 }
 
 .weather-app-wrapper {
-    max-width: 600px;
-    margin: 30px auto;
+    max-width: 800px; 
+    margin:30px auto;
+    
 }
 
 .weather-app {
@@ -91,3 +93,26 @@ li:first-letter {
 .weather-forecast-temperatures {
     font-size: 13px;
 }
+
+#button {
+    border: none;
+    opacity: 0.7;
+    background: rgb(223, 147, 147);
+    width: 67px;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+    margin: auto 5px;
+}
+
+#current-location-button {
+    border: none;
+    opacity: 0.7;
+    background: rgb(199, 155, 73);
+    width: 50 px;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+    margin: auto 5px;
+}
+
