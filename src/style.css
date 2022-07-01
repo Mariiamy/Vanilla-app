@@ -1,10 +1,10 @@
 body {
     font-family: "Dancing Script", cursive;
-   
+    font-size: 20px;
 }
 
 h1 {
-    color: #878787;
+    color: #6e6c6c;
     font-size: 24px;
     font-weight: 100;
     line-height: 28px;
@@ -20,7 +20,7 @@ li {
     list-style: none;
     margin: 0;
     padding: 0;
-    color: rgb(135, 135, 135);
+    color: rgb(98, 97, 97);
     font-size: 16px;
     font-weight: 100;
     line-height: 19px;
@@ -32,14 +32,15 @@ li:first-letter {
 
 .weather-app-wrapper {
     max-width: 800px; 
-    margin:30px auto;
+    margin:40px auto;
     
 }
 
 .weather-app {
-    padding: 20px;
+    padding: 30px;
     border: 1px solid #dadde1;
     border-radius: 5px;
+    background: radial-gradient(592px at 48.2% 50%, rgba(255, 255, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%);
 }
 
 .overview {
@@ -94,14 +95,19 @@ li:first-letter {
 }
 
 #button {
-    border: none;
     opacity: 0.7;
     background: rgb(223, 147, 147);
     width: 70px;
     border-radius: 6px;
     font-size: 16px;
-    text-align: center;
     margin: auto 5px;
+    float: left;
+    border: none;
+}
+
+#button:hover {
+    background: rgb(111, 67, 67);
+    transition: all 200ms ease-in-out;
 }
 
 #current-location-button {
@@ -112,6 +118,12 @@ li:first-letter {
     border-radius: 6px;
     font-size: 16px;
     margin: auto 5px;
+    float: left;
+}
+
+#current-location-button:hover {
+    background: rgb(109, 85, 42);
+    transition: all 200ms ease-in-out;
 }
 
 #search-form {
