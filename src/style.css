@@ -22,7 +22,7 @@ li {
     padding: 0;
     color: rgb(98, 97, 97);
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 10px;
     line-height: 19px;
 }
 
@@ -45,6 +45,8 @@ li:first-letter {
 
 .overview {
     margin-bottom: 20px;
+    margin-right: auto;
+
 }
 
 .weather-temperature img {
@@ -96,12 +98,13 @@ li:first-letter {
     font-size: 20px;
 }
 
+
 #button {
     opacity: 0.7;
     background: rgb(223, 147, 147);
-    width: 70px;
+    width: 75px;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 18px;
     margin: auto 5px;
     float: left;
     border: none;
@@ -116,9 +119,9 @@ li:first-letter {
     border: none;
     opacity: 0.7;
     background: rgb(199, 155, 73);
-    width: 65px;
+    width: 70px;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 18px;
     margin: auto 5px;
     float: left;
 }
@@ -130,4 +133,21 @@ li:first-letter {
 
 #search-form {
     margin-left: 5px;
+}
+
+#city-input {
+    font-size: 18px;
+}
+
+#first {
+   width: 300px;
+   text-align: right;
+}
+
+#info {
+    width: 300px;
+}
+
+#main {
+   margin-right: 5px;
 }

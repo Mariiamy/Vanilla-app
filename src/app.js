@@ -4,7 +4,6 @@ function formatDate(timestamp) {
   if (hours < 10) {
     hours = `0${hours}`;
   }
-  
 
  let minutes = date.getMinutes();
   if (minutes < 10) {
@@ -132,4 +131,4 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 
-search("New York");
+search("Bristol, UK");

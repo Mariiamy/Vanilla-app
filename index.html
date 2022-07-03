@@ -37,26 +37,31 @@
                     </div>
                 </form>
                 <div class="overview">
+                    <div class="col-6" id="main">
                         <h1 id="city"></h1>
-                        <ul>
-                            <li><span id="date"></span></li>
-                            <li id="description"></li>
+                        <ul> 
+                            <li>Last updated: <span id="date"></span></li>
+                            <li id="description"> </li>
                         </ul>
+                    </div>
+                    <div class="col-6" id="next">
+                        <img src="" alt="Clear" id="icon" class="float-left" />
+                        </div>
                 </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-6" id="info">
+                        <ul>
+                            <li>Humidity: <span id="humidity"></span>%</li>
+                            <li>Wind: <span id="wind"></span> m/h</li>
+                        </ul>
+                    </div>
+                    <div class="col-6" id="first">
                         <div class="clearfix weather-temperature">
-                            <img src="" alt="Clear" id="icon" class="float-left" />
+                            
                             <div class="float-left">
                                 <strong id="temperature"></strong><span class="units"> °C</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-6">
-                        <ul class="info">
-                            <li>Humidity: <span id="humidity"></span>%</li>
-                            <li>Wind: <span id="wind"></span> m/h</li>
-                        </ul>
                     </div>
                 </div>
                 <div class="weather-forecast" id="forecast"></div>
