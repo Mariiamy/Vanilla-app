@@ -17,6 +17,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Weather App</title>
 </head>
 
@@ -36,15 +37,24 @@
                         </div>
                     </div>
                 </form>
-                <div class="overview">
-                    <div class="col-6" id="main">
-                        <h1 id="city"></h1>
-                        <ul> 
-                            <li>Last updated: <span id="date"></span></li>
-                            <li id="description"> </li>
-                        </ul>
+                <div class="container">
+                    <div class="overview">
+                        <div class="row align-items-start">
+                            <div class="col"id="main">
+                                <h1 id="city"></h1>
+                                <ul class="small">
+                                    <li>Last updated: <span id="date"></span></li>
+                                    <li id="description"> </li>
+                                </ul>
+                            </div>
+                            <!-- <div class="col">
+                            </div> -->
+                            <div class="col"id="nowweather">
+                            <h3>Today is <br>
+                                 Monday, the 12th day of June!</h3>
+                            </div>
+                        </div>
                     </div>
-                    
                 </div>
                 <div class="row align-items-start">
                     <div class="col" id="picture">
@@ -64,6 +74,68 @@
                         </ul>
                     </div>           
                 </div>
+
+
+                <!-- <div class="row text-center">
+                    <div class="col">
+                        <p class="weather-time">
+                            03:00 <br>
+                        </p>
+                        <p class="temperature-weather-time">
+                        15º | 12º
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p class="weather-time">
+                            06:00 <br>
+                        </p>
+                        <p class="temperature-weather-time">
+                        17º | 11º
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p class="weather-time">
+                            09:00 <br>
+                        </p>
+                        <p class="temperature-weather-time">
+                        17º | 13º
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p class="weather-time">
+                            12:00 <br>
+                        </p>
+                        <p class="temperature-weather-time">
+                        19º | 13º
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p class="weather-time">
+                            15:00 <br>
+                        </p>
+                        <p class="temperature-weather-time">
+                        21º | 13º
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p class="weather-time">
+                            18:00 <br>
+                        </p>
+                        <p class="temperature-weather-time">
+                        21º | 12º
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p class="weather-time">
+                            21:00 <br>
+                        </p>
+                        <p class="temperature-weather-time">
+                        22º | 13º
+                        </p>
+                    </div>
+                </div> -->
+
+
                 <div class="weather-forecast" id="forecast"></div>
             </div>
             <small>

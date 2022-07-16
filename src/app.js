@@ -1,3 +1,45 @@
+let now = new Date();
+let h3 = document.querySelector("h3");
+let hour = now.getHours();
+if (hour < 10) {
+  hour = `0${hour}`;
+}
+let min = now.getMinutes();
+if (min < 10) {
+  min = `0${min}`;
+}
+let days = [
+  "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ];
+let day = days[now.getDay()];
+let months = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "June",
+  "July",
+  "Aug",
+  "Sept",
+  "Oct",
+  "Nov",
+  "Dec",
+];
+let month = months[now.getMonth()];
+let year = now.getFullYear();
+let date = now.getDate();
+
+h3.innerHTML = `Today is ${day} the ${date}th of ${month} , ${year} at ${hour}:${min} `;
+
+
+
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -129,6 +171,11 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+
+
+
+
 
 
 search("Bristol, UK");
